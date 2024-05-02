@@ -10,13 +10,13 @@ VERSION="slurmibtopology.sh version 0.22. Date: 09-May-2017"
 # Directories where commands live:
 sprefix=/usr/sbin
 prefix=/usr/bin
-
+cz_slurm_prefix=/hpc/slurm/installed/current/bin
 # Commands used from the infiniband-diags RPM:
 IBNETDISCOVER=$sprefix/ibnetdiscover
 IBSTAT=$sprefix/ibstat
 
 # Slurm command for printing sorted hostlists
-export MY_SCONTROL=$prefix/scontrol
+export MY_SCONTROL=$cz_slurm_prefix/scontrol
 
 # GNU Awk (gawk version 4 is better, but gawk version 3 should work)
 MY_AWK=$prefix/gawk
